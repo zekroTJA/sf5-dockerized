@@ -8,7 +8,7 @@ fi
 
 if [ -z "$(ls -A ./config 2> /dev/null)" ]; then
     echo "----- Initializing config directory -----"
-    if [ -d "config.tmp" ]; then
+    if [ -f "config.tmp" ]; then
         mv ./config.tmp ./config
     else
         mv ./config.tmp/* ./config/

@@ -12,8 +12,6 @@ RUN bash ./Install.sh
 
 RUN test -d ./config && mv ./config ./config.tmp
 
-# RUN chmod +x ./startserver.sh
-
 RUN chmod +x scripts/*.sh
 
 RUN echo "eula=true" > eula.txt
